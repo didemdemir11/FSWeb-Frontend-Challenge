@@ -21,5 +21,30 @@
     "images": {
       "hero_image": "https://bit.ly/4dxOncn"
     }
+  },
+  "skills": {
+    "title_tr": "Yetenekler",
+    "title_eng": "Skills"
+  },
+  "profile": {
+    "title_tr": "Profil",
+    "title_eng": "Profile",
+    "basic_info_title_tr": "Genel Bilgiler",
+    "basic_info_title_eng": "Basic Information",
+    "details": {
+      "birth_date_tr": "Doğum Tarihi",
+      "birth_date_eng": "Birth Date",
+      "birth_date_value": "11.09.1993",
+      "residence_tr": "İkamet Şehri",
+      "residence_eng": "Residence City",
+      "residence_value": "Ankara",
+      "education_tr": "Eğitim",
+      "education_eng": "Education",
+      "education_value_tr": "ODTÜ İşletme\n Lisans,2017",
+      "education_value_eng": "METU BA \n Bachelor's, 2017",
+      "roles_tr": "Tercih Edilen Roller",
+      "rolles_eng": "Preferable Roles",
+      "roles_value": "Frontend,UI"
+    }
   }
 }
