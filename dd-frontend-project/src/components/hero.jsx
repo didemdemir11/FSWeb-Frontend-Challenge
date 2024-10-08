@@ -1,4 +1,5 @@
 import React from "react";
+import GitHubButton from "react-github-btn";
 
 const Hero = () => {
   return (
@@ -10,28 +11,40 @@ const Hero = () => {
     >
       <div className="px-60">
         <header className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold ">didem</h1>
+          <h1 className="text-3xl font-bold text-customGreen ">didem</h1>
           <div className="flex space-x-4">
-            <button>TÜRKÇE'YE GEÇ</button>
+            <button className="text-customGreen font-bold">
+              TÜRKÇE'YE GEÇ
+            </button>
             <div>
               <button>
-                <div className="pointer-events-auto h-6 w-10 rounded-full p-1 ring-1 ring-inset transition duration-200 ease-in-out bg-[#8F88FF] ring-black/20 flex items-center">
+                <div className="pointer-events-auto h-6 w-10 rounded-full p-1 ring-1 ring-inset transition duration-200 ease-in-out bg-[#8F88FF] flex items-center">
                   <div className="h-4 w-4 rounded-full bg-[#FFE86E] shadow-sm ring-1 ring-slate-700/10 transition duration-200 ease-in-out translate-x-4"></div>
                 </div>
               </button>
-              <span>Dark Mode</span>
+              <span className="text-customPurple font-bold">DARK MODE</span>
             </div>
           </div>
         </header>
         <main className="flex justify-between items-center mt-8">
           <div className="flex flex-col items-start">
-            <h1 className="mb-4">I am a Frontend Developer...</h1>
-            <p className="mb-4">
+            <h1 className="mb-4 text-customGreen font-bold text-5xl">
+              I am a Frontend Developer...
+            </h1>
+            <p className="mb-4 text-white font-normal">
               ...who likes to craft solid and scalable frontend products with
               great user experiences.
             </p>
 
             <div className="links flex space-x-4">
+              <GitHubButton
+                href="https://github.com/buttons"
+                data-color-scheme="no-preference: light; light: light; dark: dark;"
+                data-size="large"
+                aria-label="Follow @buttons on GitHub"
+              >
+                Github
+              </GitHubButton>
               <a href="https://github.com/didemdemir11">GitHub</a>
               <a href="https://www.linkedin.com/in/didem-demir-a37917116/">
                 LinkedIn
