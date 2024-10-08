@@ -4,15 +4,17 @@ import GitHubButton from "react-github-btn";
 const Hero = () => {
   return (
     <section
-      className="hero content"
+      className="hero content w-full h-full"
       style={{
-        background: "linear-gradient(to right, #4731D3 70%, #CBF281 30%)",
+        background: "linear-gradient(to right, #4731D3 75%, #CBF281 25%)",
       }}
     >
-      <div className="px-60">
+      <div className="pt-[100px] pb-[100px] px-6 md:px-8 lg:px-60">
         <header className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-customGreen ">didem</h1>
-          <div className="flex space-x-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-customGreen self-center ">
+            didem
+          </h1>
+          <div className="flex space-x-4 self-start">
             <button className="text-customGreen font-bold">
               TÜRKÇE'YE GEÇ
             </button>
@@ -26,7 +28,7 @@ const Hero = () => {
             </div>
           </div>
         </header>
-        <main className="flex justify-between items-center mt-8">
+        <main className="flex flex-col lg:flex-row justify-between items-center mt-8">
           <div className="flex flex-col items-start">
             <h1 className="mb-4 text-customGreen font-bold text-5xl">
               I am a Frontend Developer...
@@ -39,22 +41,25 @@ const Hero = () => {
             <div className="links flex space-x-4">
               <GitHubButton
                 href="https://github.com/didemdemir11"
-                data-color-scheme="no-preference: light; light: light; dark: dark;"
+                data-color-scheme="no-preference: light; light: dark; dark: light;"
                 data-size="large"
                 aria-label="Follow @buttons on GitHub"
               >
                 Github
               </GitHubButton>
-              <a href="https://www.linkedin.com/in/didem-demir-a37917116/">
+              <a
+                href="https://www.linkedin.com/in/didem-demir-a37917116/"
+                className="text-white font-bold"
+              >
                 LinkedIn
               </a>
             </div>
           </div>
 
-          <div className="flex justify-center items-center mx-auto- max-w-[350px] max-h-[350px]">
+          <div className="flex justify-center items-center mx-auto- max-w-[350px] md:max-h-[350px]">
             <img
               src="https://bit.ly/4dxOncn"
-              className="w-full h-full object-cover rounded-[18px]"
+              className="w-full h-auto object-cover rounded-[18px]"
             />
           </div>
         </main>
