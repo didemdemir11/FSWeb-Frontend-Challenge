@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "header": {
+      "name": "didem"
+    },
+    "buttons": {
+      "language_switch_tr": "TÜRKÇE'YE GEÇ",
+      "language_switch_eng": "SWITCH TO ENGLISH",
+      "dark_mode": "DARK MODE"
+    },
+    "content": {
+      "title_tr": "Ben bir Frontend Geliştiriciyim...",
+      "title_eng": "I am a Frontend Developer...",
+      "description_tr": "Sağlam ve ölçeklenebilir frontend projeleri üretiyorum.",
+      "description_eng": "...who likes to craft solid and scalable frontend products with great user experiences."
+    },
+    "links": {
+      "github": "https://github.com/didemdemir11",
+      "linkedin": "https://www.linkedin.com/in/didem-demir-a37917116/"
+    },
+    "images": {
+      "hero_image": "https://bit.ly/4dxOncn"
+    }
+  }
+}
