@@ -10,12 +10,12 @@ const Hero = () => {
       }}
     >
       <div className="pt-[100px] pb-[100px] px-6 md:px-8 lg:px-60">
-        <header className="flex justify-between items-center">
+        <header className="flex justify-between items-center relative">
           <h1 className="text-2xl md:text-3xl font-bold text-customGreen self-center ">
             didem
           </h1>
           <div className="flex space-x-4 self-start">
-            <button className="text-customGreen font-bold">
+            <button className="text-customGreen font-bold ">
               TÜRKÇE'YE GEÇ
             </button>
             <div>
