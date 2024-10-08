@@ -66,18 +66,18 @@ const Profile = ({ data }) => {
             <div className="flex flex-col justify-between space-y-4 flex-1">
               <h3 className="text-3xl font-medium text-white mb-4">
                 {language === "tr"
-                  ? data.about_me.title_tr
-                  : data.about_me.title_eng}
+                  ? data.about_me.about_title_tr
+                  : data.about_me.about_title_eng}
               </h3>
               <p className="text-white">
                 {language === "tr"
-                  ? data.about_me_text_tr_1
-                  : data.about_me_text_eng_1}
+                  ? data.about_me.about_text_tr_1
+                  : data.about_me.about_text_eng_1}
               </p>
               <p className="text-white">
                 {language === "tr"
-                  ? data.about_me_text_tr_2
-                  : data.about_me_text_eng_2}
+                  ? data.about_me.about_text_tr_2
+                  : data.about_me.about_text_eng_2}
               </p>
             </div>
           </div>
