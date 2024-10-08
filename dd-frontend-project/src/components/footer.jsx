@@ -6,8 +6,13 @@ const Footer = () => {
       <h2 className="text-4xl md:text-5xl lg:text-[48px] font-bold mb-12 text-customPurple text-center">
         Send me a message!
       </h2>
-      <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
-      <p>kdidemdemir@gmail.com</p>
+      <p className="text-[#120B39] text-center">
+        Got a question or proposal, or just want to say hello? Go ahead.
+      </p>
+      <p className="text-[#120B39] text-center underline">
+        kdidemdemir@gmail.com
+      </p>
+      <div className="text-[#120B39] text-center ">icons</div>
     </footer>
   );
 };
