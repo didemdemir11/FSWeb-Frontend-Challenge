@@ -38,14 +38,13 @@ const Hero = () => {
 
             <div className="links flex space-x-4">
               <GitHubButton
-                href="https://github.com/buttons"
+                href="https://github.com/didemdemir11"
                 data-color-scheme="no-preference: light; light: light; dark: dark;"
                 data-size="large"
                 aria-label="Follow @buttons on GitHub"
               >
                 Github
               </GitHubButton>
-              <a href="https://github.com/didemdemir11">GitHub</a>
               <a href="https://www.linkedin.com/in/didem-demir-a37917116/">
                 LinkedIn
               </a>
