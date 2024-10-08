@@ -1,10 +1,12 @@
-import React from "react";
-const Skills = () => {
+import React, { useContext } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
+const Skills = ({ data }) => {
+  const { language } = useContext(LanguageContext);
   return (
     <section className="pb-[100px] px-6 md:px-8 lg:px-60">
       <div className="flex flex-col lg:flex-row justify-between mt-[100px]">
         <h2 className="text-4xl md:text-5xl lg:text-[48px] font-bold mb-12 text-customPurple mr-20 ">
-          Skills
+          {language === "tr" ? data.title_tr : data.title_eng}
         </h2>
         <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-y-8 gap-x-8 flex-grow">
           <li className="flex items-center space-x-4">
