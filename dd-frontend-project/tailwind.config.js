@@ -7,6 +7,7 @@ export default {
       colors: {
         customPurple: "#4731D3",
         customGreen: "#CBF281",
+        customBlack: "#252128",
       },
     },
   },

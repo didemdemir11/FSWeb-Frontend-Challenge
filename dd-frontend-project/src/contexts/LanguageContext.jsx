@@ -2,9 +2,9 @@ import React, { createContext } from "react";
 
 export const LanguageContext = createContext();
 
-export const LanguageProvider = ({ children, value }) => {
+export const LanguageProvider = ({ children, language, toggleLanguage }) => {
   return (
-    <LanguageContext.Provider value={value}>
+    <LanguageContext.Provider value={{ language, toggleLanguage }}>
       {children}
     </LanguageContext.Provider>
   );

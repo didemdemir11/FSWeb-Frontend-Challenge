@@ -3,7 +3,7 @@ import GitHubButton from "react-github-btn";
 import { LanguageContext } from "../contexts/LanguageContext";
 
 const Hero = ({ data }) => {
-  const { language, toggleLanguage } = useContext(LanguageContext);
+  const { toggleLanguage } = useContext(LanguageContext);
   return (
     <section
       className="hero content w-full h-full"
@@ -21,9 +21,7 @@ const Hero = ({ data }) => {
               className="text-customGreen font-bold"
               onClick={toggleLanguage}
             >
-              {language === "tr"
-                ? data.buttons.language_switch_eng
-                : data.buttons.language_switch_tr}
+              {data.buttons.language_switch}
             </button>
             <div>
               <button>
@@ -40,14 +38,10 @@ const Hero = ({ data }) => {
         <main className="flex flex-col lg:flex-row justify-between items-center mt-8">
           <div className="flex flex-col items-start">
             <h1 className="mb-4 text-customGreen font-bold text-5xl">
-              {language === "tr"
-                ? data.content.title_tr
-                : data.content.title_eng}
+              {data.content.title}
             </h1>
             <p className="mb-4 text-white font-normal">
-              {language === "tr"
-                ? data.content.description_tr
-                : data.content.description_eng}
+              {data.content.description}
             </p>
 
             <div className="links flex space-x-4">
