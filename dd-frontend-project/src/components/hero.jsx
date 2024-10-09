@@ -38,7 +38,7 @@ const Hero = ({ data }) => {
                 </div>
               </button>
               <span className="text-customPurple dark:text-[#D9D9D9] ml-1 font-bold">
-                {darkMode ? "LIGHT MODE" : data.buttons.dark_mode}
+                {darkMode ? data.buttons.light_mode : data.buttons.dark_mode}
               </span>
             </div>
           </div>

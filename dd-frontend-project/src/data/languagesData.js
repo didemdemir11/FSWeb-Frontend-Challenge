@@ -7,6 +7,7 @@ const languagesData = {
       buttons: {
         language_switch: "TÜRKÇE'YE GEÇ",
         dark_mode: "DARK MODE",
+        light_mode: "LIGHT MODE",
       },
       content: {
         title: "I am a Frontend Developer...",
@@ -91,6 +92,7 @@ const languagesData = {
       buttons: {
         language_switch: "SWITCH TO ENGLISH",
         dark_mode: "GECE MODU",
+        light_mode: "GÜNDÜZ MODU",
       },
       content: {
         title: "Ben bir Frontend Geliştiriciyim...",
