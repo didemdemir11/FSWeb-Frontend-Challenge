@@ -5,7 +5,7 @@ const languagesData = {
         name: "didem",
       },
       buttons: {
-        language_switch: "SWITCH TO ENGLISH",
+        language_switch: "TÜRKÇE'YE GEÇ",
         dark_mode: "DARK MODE",
       },
       content: {
@@ -89,7 +89,7 @@ const languagesData = {
         name: "didem",
       },
       buttons: {
-        language_switch: "TÜRKÇE'YE GEÇ",
+        language_switch: "SWITCH TO ENGLISH",
         dark_mode: "GECE MODU",
       },
       content: {
