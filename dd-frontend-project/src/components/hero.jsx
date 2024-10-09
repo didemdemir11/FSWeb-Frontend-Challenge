@@ -6,16 +6,18 @@ import { DarkModeContext } from "../contexts/DarkModeContext";
 const Hero = ({ data }) => {
   const { toggleLanguage } = useContext(LanguageContext);
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+  const lightGradient = "linear-gradient(to right, #4731D3 75%, #CBF281 25%)";
+  const darkGradient = "linear-gradient(to right, #171043 75%, #1A210B 25%)";
   return (
     <section
       className="hero content w-full h-full dark:bg-customBlack"
       style={{
-        background: "linear-gradient(to right, #4731D3 75%, #CBF281 25%)",
+        background: darkMode ? darkGradient : lightGradient,
       }}
     >
       <div className="pt-[100px] pb-[100px] px-6 md:px-8 lg:px-60">
         <header className="flex justify-between items-center relative">
-          <h1 className="text-2xl md:text-3xl font-bold text-customGreen dark:customPurple self-center ">
+          <h1 className="text-2xl md:text-3xl font-bold text-customGreen dark:text-customPurple self-center ">
             {data.header.name}
           </h1>
           <div className="flex space-x-4 self-start">
