@@ -17,19 +17,19 @@ const Hero = ({ data }) => {
     >
       <div className="pt-[100px] pb-[100px] px-6 md:px-8 lg:px-60">
         <header className="flex justify-between items-center relative">
-          <h1 className="text-2xl md:text-3xl font-bold text-customGreen dark:text-customPurple self-center ">
+          <h1 className="text-2xl md:text-3xl font-bold text-customGreen self-center ">
             {data.header.name}
           </h1>
           <div className="flex space-x-4 self-start">
             <button
-              className="text-customGreen font-bold"
+              className="text-customGreen dark:text-[#BAB2E7] font-bold"
               onClick={toggleLanguage}
             >
               {data.buttons.language_switch}
             </button>
             <div>
               <button onClick={toggleDarkMode}>
-                <div className="pointer-events-auto h-6 w-10 rounded-full p-1 ring-1 ring-inset transition duration-200 ease-in-out bg-[#8F88FF] flex items-center">
+                <div className="pointer-events-auto h-6 w-10 rounded-full p-1 ring-1 ring-inset transition duration-200 ease-in-out bg-[#8F88FF] dark:bg-[#3A3A3A] flex items-center">
                   <div
                     className={`h-4 w-4 rounded-full bg-[#FFE86E] shadow-sm ring-1 ring-slate-700/10 transition duration-200 ease-in-out transform ${
                       darkMode ? "translate-x-4" : ""
@@ -37,8 +37,8 @@ const Hero = ({ data }) => {
                   ></div>
                 </div>
               </button>
-              <span className="text-customPurple font-bold">
-                {data.buttons.dark_mode}
+              <span className="text-customPurple dark:text-[#D9D9D9] ml-1 font-bold">
+                {darkMode ? "LIGHT MODE" : data.buttons.dark_mode}
               </span>
             </div>
           </div>

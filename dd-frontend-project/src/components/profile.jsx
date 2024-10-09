@@ -3,7 +3,7 @@ import React from "react";
 const Profile = ({ data }) => {
   return (
     <>
-      <div className="bg-customPurple">
+      <div className="bg-customPurple dark:bg-customPurpleDark">
         <section className="pt-[100px] pb-[100px] px-6 md:px-8 lg:px-60">
           <h2 className="text-4xl md:text-5xl lg:text-[48px] font-bold mb-12 text-customGreen">
             {data.title}
