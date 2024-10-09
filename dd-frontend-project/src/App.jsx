@@ -5,14 +5,16 @@ import Skills from "./components/skills";
 import Profile from "./components/profile";
 import Projects from "./components/projects";
 import Footer from "./components/footer";
-import data from "./data/data.json";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import useLocalStorage from "./hooks/useLocalStorage";
+import languagesData from "./data/languagesData";
 
 function App() {
-  const [language, setLanguage] = useState("eng");
+  const [language, setLanguage] = useLocalStorage("language", "eng");
   const toggleLanguage = () => {
     setLanguage((prevLang) => (prevLang === "tr" ? "eng" : "tr"));
   };
+  const data = languagesData[language];
   return (
     <>
       <LanguageProvider value={{ language, toggleLanguage }}>

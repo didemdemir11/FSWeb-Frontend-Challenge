@@ -168,3 +168,4 @@ const languagesData = {
     },
   },
 };
+export default languagesData;
