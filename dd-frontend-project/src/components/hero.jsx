@@ -53,16 +53,31 @@ const Hero = ({ data }) => {
             </p>
 
             <div className="links flex space-x-4">
-              <GitHubButton
+              <a
                 href={data.links.github}
-                data-color-scheme="no-preference: light; light: dark; dark: light;"
-                data-size="large"
-                aria-label="Follow @buttons on GitHub"
+                className="flex items-center justify-center space-x-2 p-2 rounded-[6px] bg-white hover:bg-gray-100  dark:bg-customBlack text-customPurple dark:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Github
-              </GitHubButton>
-              <a href={data.links.linkedin} className="text-white font-bold">
-                LinkedIn
+                <img
+                  src="/icons/github.png"
+                  alt="GitHub"
+                  className="w-5 h-5 "
+                />
+                <span className="font-bold">GitHub</span>
+              </a>
+              <a
+                href={data.links.linkedin}
+                className="flex items-center justify-center space-x-2 p-2 rounded-[6px] bg-white hover:bg-gray-100 dark:bg-customBlack text-customPurple dark:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/icons/linkedin.png"
+                  alt="LinkedIn"
+                  className="w-5 h-5 text-customPurple"
+                />
+                <span className="font-bold">LinkedIn</span>
               </a>
             </div>
           </div>
