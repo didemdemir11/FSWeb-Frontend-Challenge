@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import useLocalStorage from "./hooks/useLocalStorage";
 import languagesData from "./data/languagesData";
+import { DarkModeProvider } from "./contexts/DarkModeContext";
 
 function App() {
   const [language, setLanguage] = useLocalStorage("language", "en");
@@ -17,13 +18,15 @@ function App() {
   const data = languagesData[language];
   return (
     <LanguageProvider language={language} toggleLanguage={toggleLanguage}>
-      <div className="App">
-        <Hero data={data.hero} />
-        <Skills data={data.skills} />
-        <Profile data={data.profile} />
-        <Projects data={data.projects} />
-        <Footer data={data.footer} />
-      </div>
+      <DarkModeProvider>
+        <div className="App">
+          <Hero data={data.hero} />
+          <Skills data={data.skills} />
+          <Profile data={data.profile} />
+          <Projects data={data.projects} />
+          <Footer data={data.footer} />
+        </div>
+      </DarkModeProvider>
     </LanguageProvider>
   );
 }
