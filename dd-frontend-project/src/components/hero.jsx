@@ -28,7 +28,7 @@ const Hero = ({ data }) => {
               {data.buttons.language_switch}
             </button>
             <div>
-              <button onClick={toggleDarkMode}>
+              <button data-cy="dark-mode-toggle" onClick={toggleDarkMode}>
                 <div className="pointer-events-auto h-6 w-10 rounded-full p-1 ring-1 ring-inset transition duration-200 ease-in-out bg-[#8F88FF] dark:bg-[#3A3A3A] flex items-center">
                   <div
                     className={`h-4 w-4 rounded-full bg-[#FFE86E] shadow-sm ring-1 ring-slate-700/10 transition duration-200 ease-in-out transform ${
