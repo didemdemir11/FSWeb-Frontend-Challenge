@@ -17,16 +17,16 @@ export const LanguageProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const handlePostData = async () => {
-    try {
-      await postData(language, languagesData[language]);
-    } catch (error) {
-      console.error("API'ya veri gönderilemedi.", error);
-    }
-  };
-
   useEffect(() => {
-    setLanguageData(languagesData[language]);
+    const handlePostData = async () => {
+      try {
+        const axiosData = await postData(languagesData);
+        setLanguageData({ ...languageData, ...axiosData[language] });
+        console.log(languageData);
+      } catch (error) {
+        console.error("API'ya veri gönderilemedi.", error);
+      }
+    };
     handlePostData();
   }, [language]);
 
