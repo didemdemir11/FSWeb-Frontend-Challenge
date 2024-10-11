@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
 
-const Projects = ({ data }) => {
+const Projects = () => {
+  const { languageData } = useContext(LanguageContext);
   return (
     <>
       <div className="bg-customGreen dark:bg-customGreenDark">
         <section className="pt-[100px] pb-[100px] px-6 md:px-8 lg:px-60">
           <h2 className="text-4xl md:text-5xl lg:text-[48px] font-bold mb-12 text-customPurple dark:text-customGreen">
-            {data.title}
+            {languageData.projects.title}
           </h2>
-          {data.list.map((project) => (
+          {languageData.projects.list.map((project) => (
             <div
               key={project.id}
               className="bg-white dark:bg-[#2B2727] rounded-[18px] flex flex-col md:flex-row items-stretch mb-4 "

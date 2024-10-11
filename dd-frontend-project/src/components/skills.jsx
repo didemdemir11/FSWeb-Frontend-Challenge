@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
 
-const Skills = ({ data }) => {
+const Skills = () => {
+  const { languageData } = useContext(LanguageContext);
   return (
     <div className="bg-white dark:bg-customBlack">
       <section className="pb-[100px] pt-[100px] px-6 md:px-8 lg:px-60">
         <div className="flex flex-col lg:flex-row justify-between ">
           <h2 className="text-4xl md:text-5xl lg:text-[48px] font-bold mb-12 text-customPurple mr-20 dark:text-customGreen">
-            {data.title}
+            {languageData.skills.title}
           </h2>
           <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-y-8 gap-x-8 flex-grow">
             <li className="flex items-center space-x-4">

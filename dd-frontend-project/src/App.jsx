@@ -11,20 +11,15 @@ import languagesData from "./data/languagesData";
 import { DarkModeProvider } from "./contexts/DarkModeContext";
 
 function App() {
-  const [language, setLanguage] = useLocalStorage("language", "en");
-  const toggleLanguage = () => {
-    setLanguage(language === "tr" ? "en" : "tr");
-  };
-  const data = languagesData[language];
   return (
-    <LanguageProvider language={language} toggleLanguage={toggleLanguage}>
+    <LanguageProvider>
       <DarkModeProvider>
         <div className="App">
-          <Hero data={data.hero} />
-          <Skills data={data.skills} />
-          <Profile data={data.profile} />
-          <Projects data={data.projects} />
-          <Footer data={data.footer} />
+          <Hero />
+          <Skills />
+          <Profile />
+          <Projects />
+          <Footer />
         </div>
       </DarkModeProvider>
     </LanguageProvider>
