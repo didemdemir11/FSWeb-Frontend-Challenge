@@ -17,6 +17,8 @@ const languagesData = {
       links: {
         github: "https://github.com/didemdemir11",
         linkedin: "https://www.linkedin.com/in/didem-demir-a37917116/",
+        github_text: "GitHub",
+        linkedin_text: "LinkedIn",
       },
       images: {
         hero_image: "https://bit.ly/4dxOncn",
@@ -24,6 +26,39 @@ const languagesData = {
     },
     skills: {
       title: "Skills",
+      items: [
+        {
+          name: "JAVASCRIPT",
+          image: "/logos/jslogo.jpeg",
+          alt: "JavaScript Logo",
+        },
+        {
+          name: "NODE",
+          image: "/logos/node-logo.jpeg",
+          alt: "Node Logo",
+        },
+        {
+          name: "REACT",
+          image: "/logos/react-logo.png",
+          alt: "React Logo",
+        },
+        {
+          name: "VS CODE",
+          image: "/logos/vscode-logo.png",
+          alt: "VS Code Logo",
+        },
+        {
+          name: "REDUX",
+          image: "/logos/reduxlogo.png",
+          alt: "Redux Logo",
+          bgColor: "#764ABC",
+        },
+        {
+          name: "FIGMA",
+          image: "/logos/figma-logo.jpeg",
+          alt: "Figma Logo",
+        },
+      ],
     },
     profile: {
       title: "Profile",
@@ -102,6 +137,8 @@ const languagesData = {
       links: {
         github: "https://github.com/didemdemir11",
         linkedin: "https://www.linkedin.com/in/didem-demir-a37917116/",
+        github_text: "GitHub",
+        linkedin_text: "LinkedIn",
       },
       images: {
         hero_image: "https://bit.ly/4dxOncn",
@@ -109,6 +146,39 @@ const languagesData = {
     },
     skills: {
       title: "Yetenekler",
+      items: [
+        {
+          name: "JAVASCRIPT",
+          image: "/logos/jslogo.jpeg",
+          alt: "JavaScript Logo",
+        },
+        {
+          name: "NODE",
+          image: "/logos/node-logo.jpeg",
+          alt: "Node Logo",
+        },
+        {
+          name: "REACT",
+          image: "/logos/react-logo.png",
+          alt: "React Logo",
+        },
+        {
+          name: "VS CODE",
+          image: "/logos/vscode-logo.png",
+          alt: "VS Code Logo",
+        },
+        {
+          name: "REDUX",
+          image: "/logos/reduxlogo.png",
+          alt: "Redux Logo",
+          bgColor: "#764ABC",
+        },
+        {
+          name: "FIGMA",
+          image: "/logos/figma-logo.jpeg",
+          alt: "Figma Logo",
+        },
+      ],
     },
     profile: {
       title: "Profil",

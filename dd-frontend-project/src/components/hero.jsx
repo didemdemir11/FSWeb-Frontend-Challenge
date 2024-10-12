@@ -65,7 +65,9 @@ const Hero = () => {
                   alt="GitHub"
                   className="w-5 h-5 "
                 />
-                <span className="font-bold">GitHub</span>
+                <span className="font-bold">
+                  {languageData.hero.links.github_text}
+                </span>
               </a>
               <a
                 href={languageData.hero.links.linkedin}
@@ -76,9 +78,11 @@ const Hero = () => {
                 <img
                   src="/icons/linkedin.png"
                   alt="LinkedIn"
-                  className="w-5 h-5 text-customPurple"
+                  className="w-5 h-5 text-customPurple dark:text-white"
                 />
-                <span className="font-bold">LinkedIn</span>
+                <span className="font-bold">
+                  {languageData.hero.links.linkedin_text}
+                </span>
               </a>
             </div>
           </div>
