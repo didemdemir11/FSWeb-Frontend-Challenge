@@ -43,13 +43,13 @@ const Projects = () => {
                     href={project.links.view_site}
                     className="text-black dark:text-customGreen font-bold underline"
                   >
-                    View Site
+                    {languageData.projects.view_site_label}
                   </a>
                   <a
                     href={project.links.github}
                     className="text-black dark:text-customGreen font-bold underline"
                   >
-                    GitHub
+                    {languageData.projects.github_label}
                   </a>
                 </div>
               </div>

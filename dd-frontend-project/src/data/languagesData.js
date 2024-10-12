@@ -84,6 +84,8 @@ const languagesData = {
     },
     projects: {
       title: "Projects",
+      view_site_label: "View Site",
+      github_label: "GitHub",
       list: [
         {
           id: 1,
@@ -116,7 +118,32 @@ const languagesData = {
       description:
         "Got a question or proposal, or just want to say hello? Go ahead.",
       email: "kdidemdemir@gmail.com",
-      icons: "icons",
+      icons: [
+        {
+          name: "twitter",
+          src: "/icons/twitter.png",
+          alt: "Twitter",
+          link: "https://twitter.com",
+        },
+        {
+          name: "codepen",
+          src: "/icons/codepen.svg",
+          alt: "Codepen",
+          link: "https://codepen.io",
+        },
+        {
+          name: "arroba",
+          src: "/icons/arroba.png",
+          alt: "Arroba",
+          link: "mailto:kdidemdemir@gmail.com",
+        },
+        {
+          name: "instagram",
+          src: "/icons/instagram.png",
+          alt: "Instagram",
+          link: "https://instagram.com",
+        },
+      ],
     },
   },
   tr: {
@@ -204,6 +231,8 @@ const languagesData = {
     },
     projects: {
       title: "Projeler",
+      view_site_label: "Siteye git",
+      github_label: "GitHub",
       list: [
         {
           id: 1,
@@ -236,7 +265,32 @@ const languagesData = {
       description:
         "Bir sorunuz veya teklifiniz mi var, ya da sadece merhaba demek mi istiyorsunuz? Hadi!",
       email: "kdidemdemir@gmail.com",
-      icons: "icons",
+      icons: [
+        {
+          name: "twitter",
+          src: "/icons/twitter.png",
+          alt: "Twitter",
+          link: "https://twitter.com",
+        },
+        {
+          name: "codepen",
+          src: "/icons/codepen.svg",
+          alt: "Codepen",
+          link: "https://codepen.io",
+        },
+        {
+          name: "arroba",
+          src: "/icons/arroba.png",
+          alt: "Arroba",
+          link: "mailto:kdidemdemir@gmail.com",
+        },
+        {
+          name: "instagram",
+          src: "/icons/instagram.png",
+          alt: "Instagram",
+          link: "https://instagram.com",
+        },
+      ],
     },
   },
 };

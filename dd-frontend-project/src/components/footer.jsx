@@ -14,8 +14,22 @@ const Footer = () => {
       <p className="text-customPurple dark:text-[#8F88FF] text-center underline">
         {languageData.footer.email}
       </p>
-      <div className="text-customPurple dark:text-[#8F88FF] text-center ">
-        {languageData.footer.icons}
+      <div className="flex justify-center space-x-6 mt-6">
+        {languageData.footer.icons.map((icon, index) => (
+          <a
+            key={index}
+            href={icon.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform transition-transform duration-200 hover:scale-90"
+          >
+            <img
+              src={icon.src}
+              alt={icon.alt}
+              className="w-9 h-9 object-contain"
+            />
+          </a>
+        ))}
       </div>
     </footer>
   );
