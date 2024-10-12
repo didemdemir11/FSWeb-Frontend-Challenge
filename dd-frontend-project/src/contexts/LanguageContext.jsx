@@ -18,14 +18,18 @@ export const LanguageProvider = ({ children }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const handlePostData = async () => {
-      try {
-        const axiosData = await postData(languagesData);
-        setLanguageData({ ...languageData, ...axiosData[language] });
-        console.log(languageData);
-      } catch (error) {
-        console.error("API'ya veri gönderilemedi.", error);
-      }
+    const handlePostData = () => {
+      setLoading(true);
+      postData(languagesData)
+        .then((axiosData) => {
+          setLanguageData(axiosData[language]);
+          console.log(languageData);
+        })
+        .catch((error) => {
+          console.error("API'ya veri gönderilemedi.", error);
+          setError("API'ya veri gönderilemedi.");
+          setLoading(false);
+        });
     };
     handlePostData();
   }, [language]);
