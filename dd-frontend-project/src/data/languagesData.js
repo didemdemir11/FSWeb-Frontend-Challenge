@@ -21,7 +21,7 @@ const languagesData = {
         linkedin_text: "LinkedIn",
       },
       images: {
-        hero_image: "https://bit.ly/4dxOncn",
+        hero_image: "images/hero-image.png",
       },
     },
     skills: {
